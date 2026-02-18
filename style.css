@@ -1,0 +1,25 @@
+body {
+    background: #0f172a;
+    color: #f8fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;
+}
+.card {
+    background: #1e293b;
+    padding: 30px; border-radius: 12px; border: 1px solid #334155;
+    width: 380px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.output-area { display: flex; gap: 10px; margin-bottom: 20px; }
+input[type="text"] {
+    flex-grow: 1; background: #0f172a; border: 1px solid #475569;
+    color: #38bdf8; padding: 12px; border-radius: 6px; font-family: monospace; font-size: 1.1rem;
+}
+.strength-container {
+    height: 8px; background: #334155; border-radius: 4px; margin: 15px 0 5px 0; overflow: hidden;
+}
+#strength-bar { height: 100%; width: 0%; transition: 0.4s; }
+#generate-btn {
+    width: 100%; padding: 15px; background: #0ea5e9; border: none;
+    color: white; border-radius: 6px; font-weight: bold; cursor: pointer;
+}
+#generate-btn:hover { background: #0284c7; }

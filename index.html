@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSPRNG Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2><span class="shield">🛡️</span> SecurePass Gen</h2>
+        <div class="output-area">
+            <input type="text" id="password-display" readonly placeholder="Click Generate">
+            <button id="copy-btn">Copy</button>
+        </div>
+        
+        <div class="settings">
+            <label>Length: <span id="length-val">16</span></label>
+            <input type="range" id="length-slider" min="8" max="50" value="16">
+            
+            <div class="checks">
+                <label><input type="checkbox" id="upper" checked> ABC</label>
+                <label><input type="checkbox" id="numbers" checked> 123</label>
+                <label><input type="checkbox" id="symbols" checked> !@#</label>
+            </div>
+        </div>
+
+        <div class="strength-container">
+            <div id="strength-bar"></div>
+        </div>
+        <p id="entropy-text">Entropy: 0 bits</p>
+
+        <button id="generate-btn">GENERATE SECURE KEY</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
